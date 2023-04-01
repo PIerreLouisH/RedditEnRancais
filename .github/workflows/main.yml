@@ -2,12 +2,12 @@ name: Reddit bot
 
 on:
   schedule:
-    - cron: '*/30 * * * *' # Run the job every 30 minutes
+    - cron: '*/60 * * * *' # Run the job every 60 minutes
   workflow_dispatch:
 
 jobs:
   run_bot:
-    runs-on: ubuntu-latest
+    runs-on: debian-latest
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
@@ -24,5 +24,5 @@ jobs:
       env:
         CLIENT_ID: ${{ secrets.CLIENT_ID }}
         CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
-        username: ${{ secrets.USERNAME }}
-        password: ${{ secrets.PASSWORD }}
+        USERNAME: ${{ secrets.USERNAME }}
+        PASSWORD: ${{ secrets.PASSWORD }}
