@@ -1,20 +1,21 @@
 import praw
+import os
 
 # Define user agent string with GitHub URL
-client_id = {{ secrets.CLIENT_ID }}
-client_secret = {{ secrets.CLIENT_SECRET }}
-username = {{ secrets.USERNAME }}
-password = {{ secrets.PASSWORD }}
+client_id = os.environ['CLIENT_ID']
+client_secret = os.environ['CLIENT_SECRET']
+username = os.environ['USERNAME']
+password = os.environ['PASSWORD']
 user_agent = 'MyBot/1.0 (https://github.com/PIerreLouisH/RedditEnRancais)'
 
 # Create a Reddit instance and authenticate with your credentials
 reddit = praw.Reddit(client_id=client_id,
                      client_secret=client_secret,
-                     username=USERNAME,
-                     password=PASSWORD,
+                     username=username,
+                     password=password,
                      user_agent=user_agent)
 
-# Choose the subreddits you want to monitor and the corresponding French translations
+# Choose the subreddits we want to monitor and the corresponding French translations
 subreddit_names = ['france', 'rance']
 subreddit_to_french = {
 'movies': 'FilmsFR',
