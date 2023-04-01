@@ -9,7 +9,7 @@ user_agent = 'MyBot/1.0 (https://github.com/PIerreLouisH/RedditEnRancais)'
 
 # Create a Reddit instance and authenticate with your credentials
 reddit = praw.Reddit(client_id=client_id,
-                     client_secret=CLIENT_SECRET,
+                     client_secret=client_secret,
                      username=USERNAME,
                      password=PASSWORD,
                      user_agent=user_agent)
