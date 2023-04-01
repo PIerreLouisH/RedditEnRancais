@@ -13,8 +13,28 @@ reddit = praw.Reddit(client_id=secrets['CLIENT_ID'],
 # Choose the subreddits you want to monitor and the corresponding French translations
 subreddit_names = ['france', 'rance']
 subreddit_to_french = {
-'food': 'alimentation', 
-'movies': 'films', 
+'movies': 'FilmsFR',
+'iwantout':'expatriation',
+'food': 'BonneBouffe',
+'dessert': 'BellePatisserie',
+'english': 'anglais',
+'algeria': 'algerie',
+'personalfinance': 'vosfinances',
+'addictions': 'addictionsFR',
+'sexuality': 'sexualite',
+'tinder': 'TinderFrance',
+'mentalhealth': 'santementale',
+'Needafriend': 'besoindeparler',
+'parenting': 'parentingFR',
+'bitcoin': 'BitcoinFrance',
+'anarchism': 'anarchisme',
+'jail': 'taule',
+'cars': 'voitures',
+'houseplants': 'jardin',
+'conspiracy': 'conspiration',
+'philosophy': 'philosophie',
+'manga': 'mangafr',
+'rpg': 'jdr',
 'books': 'livres'} 
 # This is a hardcoded list of English-to-French translations
 
