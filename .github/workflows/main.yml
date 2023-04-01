@@ -20,7 +20,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install praw
     - name: Run bot
-      run: python bot.py
+      run: python RedditEnRancais.py
       env:
         CLIENT_ID: ${{ secrets.CLIENT_ID }}
         CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
