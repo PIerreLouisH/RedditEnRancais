@@ -1,8 +1,6 @@
-name: Reddit bot
+name: RedditEnRancais
 
 on:
-  schedule:
-    - cron: '*/60 * * * *' # Run the job every 60 minutes
   workflow_dispatch:
 
 jobs:
